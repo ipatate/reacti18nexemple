@@ -13,6 +13,12 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/'
   },
+  resolve: {
+    alias: {
+      'react': 'preact-compat',
+      'react-dom': 'preact-compat'
+    }
+  },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ],
